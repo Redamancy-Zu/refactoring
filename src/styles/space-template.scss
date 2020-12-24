@@ -1,0 +1,108 @@
+@import './new-index.scss';
+.space-template{
+    background:$content-bgColor;
+    display:flex;
+    flex-direction:column;
+    padding:6px 15px;
+    box-sizing:border-box;
+    position: relative;
+    .manageTA{
+        z-index: 10;
+        span{
+        position: absolute;
+        top:50%;
+        left:50%;
+        width:100%;
+        transform:translate(-50%,-50%);
+        text-align: center; 
+        }
+    }
+    .manageTB{
+        position: relative;
+        z-index: 100;
+        background: #fff
+    }
+    .sel-container{
+        padding: 10px 0;
+        display:flex;
+        flex-direction:row;
+        margin-bottom:10px;
+
+        .el-input{
+            width:130px;
+        }
+
+        .el-checkbox{
+            margin-left:15px;
+            margin-right:15px;
+            .el-checkbox__inner{
+                background:transparent;
+            }
+
+            .el-checkbox__label{
+                color:$new-font-color;
+                font-size:12px;
+                padding-left:5px;
+            }
+            .el-checkbox__inner::after{
+                border-right-color: #323232;
+                border-bottom-color: #323232;
+            }
+        }
+
+        .el-input,.el-select{
+            .el-input__inner{
+                background:$new-table-back;
+                border:0;
+                color: $new-font-color;
+                border-radius:2px;
+                font-size:12px;
+            }
+            .el-input__icon{
+                line-height: 1;
+            }
+        }
+        .el-button{
+            padding:8px 15px;
+            border-radius:2px;
+            font-size:12px;
+            background:#0FADFF;
+        }
+        .el-button:hover{
+            background: rgba(15,173,255,0.8);
+        }
+    }
+
+    .tb-container{
+        .el-table{
+            background:transparent !important;
+            th{
+                background:#EBF4FC;
+                color:$new-font-color;
+                text-align:center;
+                font-size:12px;
+                border:none;
+                border-right: 1px solid #fff;
+                padding: 6.5px 0;
+            }
+            tr{
+                td{
+                    font-size:12px;
+                    color:$new-font-color;
+                    background:$content-bgColor;
+                    border-bottom: $td-border;
+                    text-align: center;
+
+                    .txt_underline{
+                        color:$y-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    .el-icon-delete{
+                        color:$y-color;
+                    }
+                }
+            }
+        }
+    }
+}

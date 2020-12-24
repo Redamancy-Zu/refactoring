@@ -1,0 +1,250 @@
+@import './new-index.scss';
+
+/*主颜色值*/
+
+#deviceManagement {
+    width: 150%;
+    background: $content-bgColor;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    //tab表格高亮显示状态
+    .el-table--enable-row-hover .el-table__body tr:hover>td {
+        background-color: transparent !important;
+    }
+    //提示
+    .el-tooltip__popper.is-dark {
+        background: #FFFFFF!important;
+    }
+    .sel-container {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .dimension-list {
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-right: 10px;
+            li {
+                width: 16%;
+                height: 106px;
+                background: #E7F6FF;
+                margin-left: 12px;
+                padding: 14px;
+                box-sizing: border-box;
+                div {
+                    color: #323232;
+                    font-size: 12px;
+                }
+                div.num {
+                    span:first-child {
+                        font-size: 48px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            li:first-child {
+                margin-left: 0;
+            }
+            li.echart-box {
+                width: 25.5%;
+                display: flex;
+                padding-right: 23px;
+                padding-left: 0;
+                div#pie-chart {
+                    width: 80px;
+                    height: 80px;
+                    align-self: center;
+                }
+                div#pie-charts {
+                    width: 80px;
+                    height: 80px;
+                    align-self: center;
+                }
+                div.config-txt {
+                    p {
+                        display: flex;
+                        flex-direction: row;
+                        i {
+                            width: 4px;
+                            height: 4px;
+                            background-color: #FFC237;
+                            margin-left: 6px;
+                            margin-right: 4px;
+                        }
+                        i,
+                        span {
+                            align-self: center;
+                        }
+                        span {
+                            width: calc(100% -4px);
+                        }
+                        height: 26px;
+                        line-height: 26px;
+                    }
+                    p:first-child {
+                        i {
+                            background: #0FADFF
+                        }
+                    }
+                    p:last-child {
+                        i {
+                            background: #8A65F9
+                        }
+                    }
+                }
+            }
+        }
+        margin-bottom: 20px;
+    }
+    .tb-container {
+        .el-table {
+            background: transparent !important;
+            th {
+                background: #EBF4FC;
+                color: #323232;
+                text-align: center;
+                font-size: 12px;
+                border: none;
+                border-right: 1px solid #fff;
+                padding: 6.5px 0;
+            }
+            tr {
+                td {
+                    font-size: 12px;
+                    color: #323232;
+                    background: $content-bgColor;
+                    border-bottom: $td-border;
+                    text-align: center;
+                    .txt_underline {
+                        color: $y-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .add-house {
+        height: 100%;
+        .el-input {
+            .el-input__inner {
+                height: 28px!important;
+            }
+        }
+        &.multiple .el-dialog {
+            display: flex;
+            flex-direction: column;
+            max-height: 80%;
+            height: 446px;
+            margin: 0 auto;
+            margin-top: 10vh;
+            .el-dialog__header {
+                font-size: 16px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            .el-dialog__body {
+                height: 100%;
+                padding: 54px 10px 58px 20px;
+            }
+            .el-dialog__footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                .el-button {
+                    padding: 0;
+                    width: 88px;
+                    height: 28px;
+                    text-align: center;
+                    font-size: 12px;
+                    border: 1px solid #af7c58;
+                }
+                .el-button:first-child {
+                    margin-right: 50px;
+                }
+            }
+        }
+        .el-scrollbar {
+            height: 100%;
+            .el-scrollbar__wrap {
+                box-sizing: border-box;
+                overflow-x: hidden;
+                // padding-right:17px;
+            }
+        }
+        .add-house-box {
+            padding-top: 12px;
+            .add-house-content {
+                margin-top: 15px;
+                width: 690px;
+                height: 160px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                border: 1px solid #979797;
+                padding: 8px;
+                padding-top: 0px;
+                padding-bottom: 20px;
+                margin-bottom: 10px;
+                ul {
+                    width: 680px;
+                    li {
+                        float: left;
+                        width: 210px;
+                        padding: 0 8px;
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 2px;
+                        border: 1px solid #979797;
+                        color: #323232;
+                        font-size: 12px;
+                        background: #ffffff;
+                        margin: 8px 15px 0 0;
+                        cursor: pointer;
+                        span {
+                            display: inline-block;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            width: 169px;
+                        }
+                        i {
+                            font-size: 16px;
+                            color: #323232;
+                            float: right;
+                            margin-left: 5px;
+                            line-height: 28px;
+                        }
+                    }
+                    .database-exit {
+                        background: rgba(172, 58, 25, 0.6);
+                    }
+                    .list-exit {
+                        background: rgba(209, 161, 15, 0.6);
+                    }
+                }
+            }
+            .house-repeat {
+                i {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0 5px;
+                }
+                &:first-of-type i {
+                    background: rgba(172, 58, 25, 0.6);
+                }
+                &:last-of-type i {
+                    background: rgba(209, 161, 15, 0.6);
+                }
+            }
+        }
+    }
+}

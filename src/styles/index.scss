@@ -1,0 +1,63 @@
+/*主颜色值*/
+
+$header-bgColor:#1E2E4C;
+$aside-bgColor:#1E2E4C;
+$container-bgColor:#020B13;
+$content-bgColor:#1E2E4C;
+$font-color:#ADADAD;
+$crb-fontColor:#0FADFF;
+$td-border:1px solid #666;
+$y-color:#AF7C58;
+
+/* dialog form style */
+
+.el-dialog {
+    // padding: auto 20px;
+    box-sizing: border-box;
+    .el-dialog_body {
+        padding: 10px 30px !important;
+    }
+    .el-form {
+        .el-form-item {
+            margin-bottom: 10px;
+        }
+        .el-form-item__label,
+        .el-input__inner,
+        .el-checkbox .el-checkbox__label {
+            font-size: 12px;
+            color: #323232
+        }
+        .el-form-item__label {
+            text-align: left
+        }
+        .el-select,
+        .el-input {
+            width: 139px;
+            .el-input__inner {
+                // height: 25px!important;
+                width: 139px;
+                border-radius: 2px;
+            }
+        }
+        .el-input--small .el-input__icon {
+            // line-height: 25px;
+        }
+    }
+    .el-dialog__footer {
+        text-align: center;
+        .el-button {
+            padding: 0;
+            width: 88px;
+            height: 28px;
+            text-align: center;
+            font-size: 12px;
+            border: 1px solid #AF7C58;
+        }
+        .el-button:first-child {
+            margin-right: 50px;
+        }
+        .el-button--primary {
+            // background: #AF7C58;
+        }
+    }
+}

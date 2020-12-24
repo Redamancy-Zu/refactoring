@@ -1,0 +1,177 @@
+@import './new-index.scss';
+
+.template-base-msgbox{
+	background:$content-bgColor;
+	padding:12px;
+	height:300px;
+	.msg-title{
+		.back{
+			display:inline-block;
+			width:60px;
+			height:24px;
+			border-radius:2px;
+			color:$new-font-color;
+			text-align:center;
+			margin-right:8px;
+			.el-button {
+			  padding: 5px 8px;
+			  border-radius: 2px;
+			  font-size: 12px;
+			  color:#fff;
+			  background: #0FADFF;
+			  margin-right:12px;
+			  border:none;
+			}
+		  }
+		.template-name{
+			display:inline-block;
+			font-size:14px;
+			font-weight:600;
+			color:$new-font-color;
+		}
+		.el-button {
+			padding: 8px 20px;
+			border-radius: 2px;
+			font-size: 12px;
+			background: #0FADFF;
+			margin-right:12px;
+		}
+		.el-button:hover {
+          background:rgba(15,173,255,0.8);
+        }
+	}
+	.base-msg{
+		display:flex;
+		.img-box{
+			background:#fff;
+			flex-basis:370px;
+			height:250px;
+			overflow:hidden;
+			margin-right:24px;
+			text-align:center;
+			img{
+				height:100%;
+			}
+		}
+		.base-data{
+			div{
+				padding:5px 5px 5px 0px;
+			}
+			span{
+				
+				color:#adadad;
+			}
+			.txt-col{
+				color:$new-font-color;
+			}
+		}
+	}
+	
+}
+
+.device-mag-box{
+	padding-top:12px;
+	.device-msg{
+		color:$new-font-color; //设备信息字体颜色
+		
+		.el-button{
+			margin-top:10px;
+			padding: 8px 20px;
+			border-radius: 2px;
+			font-size: 12px;
+			background: #0FADFF;
+			margin-right:24px;
+		}
+		.el-button:hover{
+		      background:rgba(15,173,255,0.8);
+		}
+		.space-box{
+			padding:0 24px;
+			margin-top:18px;
+			.space-name-title{
+				background:#E0F3FC;
+				height:30px;
+				line-height:30px;
+				.sapce-name{
+					margin-left:6px;
+					font-size:14px;	
+					font-weight:bold;
+				}
+			}
+			
+			.device-type{
+				p{
+					margin:12px 0 8px 12px;
+				}
+				.type-col{
+					display:inline-block;
+					width:6px;
+					height:6px;
+					border-radius:50%;
+					margin-right:5px;
+					position:relative;
+					top:-1px;
+				}
+				.bg-zm{
+					background:#FFC000;
+				}
+				.bg-wkq{
+					background:#915FFF;
+				}
+				.bg-cl{
+					background:#00B3FF;
+				}
+				.bg-dj{
+					background:#C616FE;
+				}
+				.bg-af{
+					background:#1EDCA4;
+				}
+				.device{
+					ul{
+						padding-left:32px;
+						li{
+              				margin-top: 12px;
+							margin-right:36px;
+							.margin-r{
+								margin-right:16px;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		.log-msg{
+			padding:14px;
+			ul{
+				li{
+					margin-bottom:12px;
+					span{
+						display:inline-block;
+						.circle{
+							display:inline-block;
+							width:4px;
+							height:4px;
+							border-radius:50%;
+							background:#0FADFF;
+							position:relative;
+							top:-3px;
+							margin-right:6px;
+						}
+					}
+					.log-time{
+						margin-right:36px;
+						vertical-align:top;
+					}
+					div{
+						display:inline-block;
+						p{
+							margin-bottom:8px;
+						}
+					}
+				}
+			}
+		}
+	}		
+}

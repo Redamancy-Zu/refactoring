@@ -1,0 +1,81 @@
+@import './index.scss';
+
+.device-detail-container{
+	background:$content-bgColor;
+	width:100%;
+	padding:20px;
+	color:#fff;
+	.device-msg-title{
+		font-size:16px;
+		color:#fff;	
+		font-weight:500px;
+		margin-bottom:25px;
+	}
+	.device-msg{
+		.title{
+			font-size: 14px;
+			font-weight:500;
+		}
+		.msg-box{
+			margin:8px 0 24px;
+			span{
+				margin-right:36px;
+			}
+		}
+	}
+	.log-msg{
+		.title{
+			font-size: 14px;
+			font-weight:500;
+		}
+		.notice-box{
+			display:inline-block;
+			margin-left:300px;
+			span{
+				display:inline-block;
+				color:#adadad;
+			}
+			b{
+				display:inline-block;
+				width:4px;
+				height:4px;
+				border-radius:50%;
+				vertical-align: middle;
+				position:relative;
+				top:-1px;
+			}
+			.blu-b{
+				background:#0FADFF;
+			}
+			.orange-b{
+				background:#FFC237;
+			}
+		}
+		.log-list{
+			margin:8px 0 24px;
+			list-style: none;
+			li{
+				margin-top:12px;
+				b{
+					display:inline-block;
+					width:4px;
+					height:4px;
+					border-radius:50%;
+					vertical-align: middle;
+					position:relative;
+					top:-1px;
+				}
+				.blu-b{
+					background:#0FADFF;
+				}
+				.orange-b{
+					background:#FFC237;
+				}
+				.margin-l{
+					margin-left:36px;
+				}
+			}
+
+		}
+	}
+}

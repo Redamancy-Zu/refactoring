@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+}
+
+*{
+  font-family: "Microsoft YaHei","Open Sans","Helvetica Neue","Helvetica,Arial","Hiragino Sans GB","STXihei,STHeiti","SimHei",sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+  
+ul, ol {
+	list-style-type: none;
+}	
+input:focus{
+outline: none;
+}
+a{
+	text-decoration: none;
+}
+body,ul,ol,p,h1,h2,h3,h4,h5,h6{
+	padding:0;
+	margin:0;
+}
+button{
+	cursor: pointer;
+}
+
+.overl{
+	overflow:hidden;
+	text-overflow:ellipsis; 
+	white-space: nowrap;/*加宽度width属来兼容部分浏览*/
+}
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.overh{
+	overflow:hidden;
+}
+
+.clearb{
+	clear:both;
+}
+
+
+.el-menu{
+	border:none !important;
+}
+// .el-table--enable-row-hover .el-table__body tr:hover>td{
+// 	background-color: #1E2E4C !important;
+// }
+
+.el-table--group::after, .el-table--border::after, .el-table::before {
+    background-color: transparent !important;
+}
+
+.el-message-box__message p{
+	text-align: center !important;
+}
+/* 分页 */

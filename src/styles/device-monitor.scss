@@ -1,0 +1,88 @@
+@import './index.scss';
+.device-monitor{
+	background:$content-bgColor;
+	padding:10px 24px;
+	min-width:790px;
+	overflow-x:auto;
+	.address-sel-container{
+		font-size:0;
+		margin-bottom:15px;
+		select{
+			background:rgba(64,151,234,0.2);
+			font-size:12px;
+			margin-right:20px;
+			height:25px;
+			padding:0 10px;
+			border-radius: 2px;
+			color:#fff;
+			outline:none;
+			border:none;
+		}
+		.select-col{
+			color:#999;
+		}
+	}
+	.device-list-container{
+		width:100%;
+		table{
+			width:100%;
+			border-collapse:collapse; 
+			thead{
+				tr{
+					height:30px;
+					th{
+						color:#fff;
+						background:rgba(64,151,234,0.1);
+						border-right:1px solid $content-bgColor;
+					}
+				}
+			}
+			tbody{
+				tr{
+					height:35px;
+					td{
+						text-align: center;
+						color:#fff;
+						border-bottom:1px solid #666;
+						a{
+							color:rgba(255,168,59,0.7);
+							text-decoration:underline; 
+						}
+					}
+				}
+			}
+			
+			.width52{
+				min-width:52px;
+			}
+			.width70{
+				min-width:70px;
+			}
+			.width74{
+				min-width:74px;
+			}
+			.width80{
+				min-width:80px;
+			}
+			.width92{
+				min-width:92px;
+			}
+			.width108{
+				min-width:108px;
+			}
+			.width128{
+				min-width:128px;
+			}
+			.width146{
+				min-width:146px;
+			}
+		}
+		.paging{
+			margin-top:16px;
+		}
+		
+	}
+	
+	
+}
+

@@ -1,0 +1,51 @@
+
+@import './new-index.scss';
+#spaceManagement{
+    min-height:420px;
+	background:$content-bgColor;
+    display:flex;
+    flex-direction:column;
+    padding:6px 15px;
+    box-sizing:border-box;	
+    .spaceManageContainer{
+        .el-table{
+            background:transparent !important;
+            th{
+                background:#20385B;
+                color:#fff;
+                text-align:center;
+                font-size:12px;
+                border:none;
+                border-right: 1px solid #1E2E4C;
+            }
+            tr{
+                td{
+                    font-size:12px;
+                    color:#fff;
+                    background:$content-bgColor;
+                    border-bottom: $td-border;
+                    text-align: center;
+                    .txt_underline{
+                        color:$y-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .el-select{
+		width:90px;
+		.el-input{
+			input{
+				padding:2px;
+				background:rgba(64,151,234,0.2);
+				border:0;
+			}
+		}
+	}
+	.el-button{
+		width:86px;
+		border:0;
+	}
+}
