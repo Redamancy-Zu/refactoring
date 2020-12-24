@@ -18,7 +18,7 @@
         <p>
         <span class="unit">选择节点类型</span>
         <!-- 单元列表-->
-        <el-select
+        <!-- <el-select
           size="mini"
           v-model="iotDeviceParam.nodeType"
           placeholder="全部"
@@ -31,7 +31,8 @@
             :label="item.name"
             :value="item.code"
           ></el-option>
-        </el-select>
+        </el-select> -->
+        <common-select :nodeType="iotDeviceParam.nodeType" :nodeTypes="nodeTypes" @iotProject = "iotProject">  </common-select>
       </p>
       <p>
         <span class="unit">选择品牌</span>
@@ -214,8 +215,12 @@ import {
   selectNum, //iot设备统计信息
   selectNode //节点类型下拉框数据
 } from "../../api/api.js";
-
+// 引入 单元列表 组件 
+import commonSelect from '../../Common/select'
 export default {
+  components:{
+    commonSelect,  
+  },
   data() {
     return {
       idFind:null,  //模糊搜索

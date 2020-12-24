@@ -345,14 +345,16 @@ export default {
           }
         })
 		.catch(() => {});
-	  //项目告警
+    //项目告警
+    
       oAlarm()
         .then(res => {
           if (res.data.data.alarm != null) {
             this.warnListDate = res.data.data.alarm;
           }
         })
-		.catch(() => {});
+    .catch(() => {});
+    
 	  //热点标签下拉
       pSelectModelLabelType()
         .then(res => {
@@ -363,6 +365,8 @@ export default {
           }
         })
         .catch(() => {});
+
+
       oDeviceLabel({ labelTypeCode: this.Labvalue })
         .then(res => {
           if (res.data.deviceLabel) {
@@ -370,12 +374,14 @@ export default {
           }
         })
         .catch(() => {});
+
       oDeviceCategory().then(res => {
         if (res.data.data.deviceCategory) {
           this.lables.names = res.data.data.deviceCategory;
           this.pieChart(this.lables.names);
         }
       });
+
       oDeviceRegion({}).then(res => {
         res.data.data.region.forEach((item, index) => {
           res.data.data.region[index].name = item.city;
@@ -422,7 +428,8 @@ export default {
         this.deviceGrowthDate = echartsData;
         this.lineChart(echartsData);
       });
-	},
+  },
+  
 	//热点标签top
     barChart() {
       let nameData = [];
@@ -431,6 +438,7 @@ export default {
         nameData.push(item.name);
         valueData.push(item.value);
       });
+      // echarts
       let myChart = echart.init(document.getElementById("labsChart"));
       let option = {
         grid: {
@@ -781,6 +789,8 @@ export default {
   }
 };
 </script>
+
+
 <style lang="scss">
 @import "../../styles/new-index.scss";
 .overview {

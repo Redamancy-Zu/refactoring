@@ -39,6 +39,7 @@
           </el-table-column>
         </el-table>
       </template>
+
       <div class="paging fr" v-snap="iotDeviceParam.pageIndex">
         <el-pagination
           background
@@ -81,6 +82,7 @@
           <el-button type="primary" @click="formPost('editForm')">确定</el-button>
         </span>
       </el-dialog>
+      
       <el-dialog
         :modal-append-to-body="false"
         title="确认删除"
